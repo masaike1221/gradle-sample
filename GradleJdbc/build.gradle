@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'war'
+
+mainClassName = 'work.Main'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compile 'mysql:mysql-connector-java:5.1.45'
+}
+
+jar {
+    baseName = 'GradleJdbc'
+    manifest {
+		attributes 'Main-Class' : mainClassName
+	}
+}

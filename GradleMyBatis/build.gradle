@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+dependencies {
+    compile 'org.mybatis:mybatis:3.3.0'
+    compile 'mysql:mysql-connector-java:5.1.45'
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
