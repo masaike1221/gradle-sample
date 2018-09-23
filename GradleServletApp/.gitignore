@@ -11,6 +11,7 @@
 
 # Gradle
 .gradle
+!gradle-wrapper.jar
 
 # Build
 out

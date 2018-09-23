@@ -4,13 +4,14 @@
 *.war
 *.ear
 
-# Eclipse
+# Eclipse（warにしてデプロイする場合は不要）
 .project
 .classpath
 .settings
 
 # Gradle
 .gradle
+!gradle-wrapper.jar
 
 # Build
 out
